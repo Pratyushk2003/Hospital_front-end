@@ -1,6 +1,6 @@
 # Hospital_front-end
-A basic webpage for a health care service
-![image](https://github.com/Pratyushk2003/Hospital_front-end/assets/77561223/9645eb03-86b7-44e6-aa65-3e5fc183253f)
-![image](https://github.com/Pratyushk2003/Hospital_front-end/assets/77561223/6d4e8971-45fd-4677-8be9-3f0a74f9f675)
-![image](https://github.com/Pratyushk2003/Hospital_front-end/assets/77561223/386b75cd-8ee1-433d-85a4-e850f7f2eb21)
-![image](https://github.com/Pratyushk2003/Hospital_front-end/assets/77561223/9470b83e-c0b3-4f9c-80e3-1410c1628010)
+A basic webpage for a health care service using HTML an CSS
+![image](https://github.com/Pratyushk2003/Hospital_front-end/assets/77561223/9a23eb6b-a7c1-4343-b594-f77c0781a040)
+![image](https://github.com/Pratyushk2003/Hospital_front-end/assets/77561223/40257df4-7f0d-4ec3-8087-142ebbfffe15)
+![image](https://github.com/Pratyushk2003/Hospital_front-end/assets/77561223/c441ad36-5424-40bf-af7b-ae1451aa8d05)
+![image](https://github.com/Pratyushk2003/Hospital_front-end/assets/77561223/7e51bcfb-0740-4d85-897f-c9d20e127815)
