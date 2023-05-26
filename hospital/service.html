@@ -17,11 +17,42 @@
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
         <label for="message">Description:</label>
-        <input type="text" id="user-input" placeholder="Enter your Disease Description" required>
+        <input type="text" id="user-input" placeholder="Enter your Disease Description" required />
         <button type="submit">Send</button>
       </form>
     </div>
   </div>
-   <script src="script.js"></script>
+   <script>
+    const appointmentForm = document.getElementById('appointmentForm');
+    const userInput = document.getElementById('user-input');
+    appointmentForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const userMessage = userInput.value.trim();
+      if (userMessage !== '') {
+        appendMessage(userMessage, 'user');
+        fetchAIResponse(userMessage);
+      }
+      userInput.value = '';
+    });
+    function appendMessage(message, sender) {
+      const messageElement = document.createElement('div');
+      messageElement.classList.add(sender);
+      messageElement.textContent = message;
+      chatContainer.appendChild(messageElement);
+    }
+
+    async function fetchAIResponse(userMessage) {
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ message: userMessage })
+      });
+      const data = await response.json();
+      const aiMessage = data.message;
+      appendMessage(aiMessage, 'ai');
+    }
+  </script>
 </body>
 </html>
